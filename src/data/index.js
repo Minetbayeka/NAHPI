@@ -1,5 +1,9 @@
    import image from "@assets/image/girls.jpeg"
-   
+   import image1 from "@assets/image/engineers.jpg"
+   import image2 from "@assets/image/dpo1.jpg"
+   import image3 from "@assets/image/prority.jpg"
+  
+
   export  const programs = [
     {
       id: 1,
@@ -84,3 +88,17 @@
       description: 'This protects the university\'s ongoing financial health following the $24 million cut to ASU\'s budget enacted by the state legislature and governor of Arizona.',
     },
   ];
+
+export   const articles = [
+
+  {
+    title: "Master’s degrees",
+    description: "A master’s degree is a versatile, advanced graduate degree that typically takes 1-3 years to complete after your bachelor’s degree.With most programs offering the flexibility of a thesis or non-thesis option, you will be prepared for a more advanced level of professional work or further academic research.",
+    imageUrl: image2
+  },
+  {
+    title: "Doctoral degrees",
+    description: "A doctoral or PhD degree is the highest academic degree you can earn. During your doctoral degree, you will conduct original research and contribute new knowledge to your field.Doctoral degree programs vary in length, and can be started after completing your bachelor’s degree or master’s degree.",
+    imageUrl: image1
+  },
+];

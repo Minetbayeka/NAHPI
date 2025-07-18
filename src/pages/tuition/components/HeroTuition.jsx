@@ -13,23 +13,6 @@ const HeroTuition = () => {
   </div>
 </div>
 
-{/* <div className='flex flex-col'>
-    <h1 className='font-semibold text-3xl leading-tight '>Definitions of NAHPI tuition costs and fees</h1>
-    <p className='leading-relaxed'>As an NAHPI student, you will pay tuition (the cost of taking your classes) 
-        and fees (a charge for the use of something like technology ).
-         Your tuition and fees will differ from other students based on a variety of factors.</p>
-</div> */}
-
-    {/* <div>
-     <div className="text-sm">
-          <a href="#" className="text-red-800 hover:underline">English</a>
-          <span className="mx-1">|</span>
-          <a href="#" className="text-red-800 hover:underline">Español</a>
-        </div>
-      </div> */}
-
-    
-
 
 </section>
   )

@@ -4,7 +4,8 @@ import { programs, fees } from '@data';
 import image from "@assets/image/auth.jpg"
 import image1 from "@assets/image/patterns.jpg"
 import image2 from "@assets/image/sunset.jpg"
-import Button from '@components/atoms/Button';
+import { Button } from '@components/atoms/Button';
+
 
 const TuitionDetails = () => {
   return (
@@ -151,18 +152,6 @@ const TuitionDetails = () => {
 </div>
 
 
-
-    {/* <div className='mt-8 relative  w-full h-[200px]'>
-      <div>
-      <img src={image1} alt=''  className='w-full h-96 object-cover'/>
-      </div>
-      <div className='absolute inset-0 top-8 left-28'>
-      <img src={image2} alt=''/>
-      </div>
-       <div>
-
-      </div>
-    </div> */}
  <div className="mt-8 relative w-full h-[550px] mb-8">
   {/* Background image */}
   <img src={image1} alt="" className="w-full h-full object-cover" />
@@ -174,19 +163,18 @@ const TuitionDetails = () => {
       <img src={image2} alt="" className="w-full h-[30rem] object-cover rounded-lg" />
 
       {/* Text box floating on top of image2 without affecting it */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-center space-y-2">
-        <div className="bg-white bg-opacity-90 px-6 py-4 rounded-lg shadow-lg inline-block">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-center space-y-2 mx-96">
+        <div className="bg-white bg-opacity-90 px-6 py-4 rounded-lg shadow-lg inline-block w-80">
           <h2 className="text-3xl font-bold mb-2">More questions about tuition, fees and costs?</h2>
-          <Button />
+          <div className='pt-4'>
+          <Button 
+          title="Tuition and Aid"/>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-    
 
     </section>
   );
@@ -194,62 +182,3 @@ const TuitionDetails = () => {
 
 export default TuitionDetails;
 
-
-
-    //    <div className="relative bg-gray-100 min-h-[500px] lg:min-h-[600px] flex items-center">
-    //   {/* Background Image Container (Right Half) */}
-    //   <div className="absolute inset-0 flex justify-end">
-    //     {/* Using an <img> tag for the image content */}
-    //     <img src={ image} alt=''/>
-    //   </div>
-
-    //   {/* Content Container (Left Half) */}
-    //   <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-0 w-full flex items-center">
-    //     <div className="bg-white p-8 sm:p-10 lg:p-12 rounded-lg shadow-xl max-w-full lg:max-w-xl xl:max-w-2xl">
-    //       {/* Title */}
-    //       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 text-gray-900">
-    //         How can I find out how much my tuition will be?
-    //       </h1>
-
-    //       {/* Numbered List */}
-    //       <ol className="list-decimal list-inside space-y-4 text-lg text-gray-700 pl-4">
-    //         <li>Identify which ASU degree you want to earn.</li>
-    //         <li>Determine whether you are an in-state resident, or if you are an out-of-state, or international student.</li>
-    //         <li>
-    //           Determine your general costs by using the{' '}
-    //           <a href="#" className="text-red-800 hover:underline font-medium">tuition estimator</a> and list of{' '}
-    //           <a href="#" className="text-red-800 hover:underline font-medium">common fees</a>.
-    //         </li>
-    //         <li>Explore your financial aid options.</li>
-    //         <li>Receive an estimate of how much financial aid you may be eligible for.</li>
-    //       </ol>
-    //     </div>
-    //   </div>
-    // </div>
-
-
-    // <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-    //   <div className="relative w-full max-w-2xl rounded-lg shadow-lg">
-    //     <img
-    //       src={tuitionImage}
-    //       alt="Students at ASU"
-    //       className="w-full h-64 object-cover rounded-t-lg"
-    //     />
-    //     <div className="absolute inset-0 bg-yellow-300 opacity-70 rounded-lg"></div>
-    //     <div className="relative p-6 z-10">
-    //       <h1 className="text-3xl font-bold mb-4 text-gray-800">
-    //         How can I find out how much my tuition will be?
-    //       </h1>
-    //       <ul className="list-disc pl-5 space-y-2 text-gray-800">
-    //         <li>Identify which ASU degree you want to earn.</li>
-    //         <li>
-    //           Determine whether you are an in-state resident, or if you are out-of-state or an international student.
-    //         </li>
-    //         <li>
-    //           Determine your general costs by using the tuition estimator and list of common fees.
-    //         </li>
-    //         <li>Explore your financial aid options.</li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </div>
