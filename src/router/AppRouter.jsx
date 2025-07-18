@@ -1,6 +1,7 @@
 
 import Layout from "@components/atoms/Layout";
 import Home from "@pages/home/Home";
+import Tuition from "@pages/tuition/Tuition";
 import {createBrowserRouter} from "react-router-dom"
 
 
@@ -9,6 +10,7 @@ import {createBrowserRouter} from "react-router-dom"
 const children = [
 
       { element: <Home />, path: "/" },
+      { element: <Tuition />, path: "/tuition" },
    
      
     
